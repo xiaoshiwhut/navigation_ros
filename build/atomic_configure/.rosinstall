@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/setup.sh

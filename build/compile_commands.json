@@ -1,0 +1,182 @@
+[
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/src/googletest/googletest/include  -g   -o CMakeFiles/line_iterator.dir/test/line_iterator_test.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/line_iterator_test.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/line_iterator_test.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/src/googletest/googletest/include  -g   -o CMakeFiles/base_local_planner_utest.dir/test/gtest_main.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/gtest_main.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/gtest_main.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/src/googletest/googletest/include  -g   -o CMakeFiles/base_local_planner_utest.dir/test/utest.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/utest.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/utest.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/src/googletest/googletest/include  -g   -o CMakeFiles/base_local_planner_utest.dir/test/velocity_iterator_test.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/velocity_iterator_test.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/velocity_iterator_test.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/src/googletest/googletest/include  -g   -o CMakeFiles/base_local_planner_utest.dir/test/footprint_helper_test.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/footprint_helper_test.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/footprint_helper_test.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/src/googletest/googletest/include  -g   -o CMakeFiles/base_local_planner_utest.dir/test/trajectory_generator_test.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/trajectory_generator_test.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/trajectory_generator_test.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3 -I/usr/src/googletest/googletest/include  -g   -o CMakeFiles/base_local_planner_utest.dir/test/map_grid_test.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/map_grid_test.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/test/map_grid_test.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g   -o CMakeFiles/point_grid.dir/src/point_grid_node.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/point_grid_node.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/point_grid_node.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/footprint_helper.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/footprint_helper.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/footprint_helper.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/goal_functions.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/goal_functions.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/goal_functions.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/map_cell.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/map_cell.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/map_cell.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/map_grid.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/map_grid.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/map_grid.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/map_grid_visualizer.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/map_grid_visualizer.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/map_grid_visualizer.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/map_grid_cost_function.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/map_grid_cost_function.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/map_grid_cost_function.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/latched_stop_rotate_controller.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/latched_stop_rotate_controller.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/latched_stop_rotate_controller.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/local_planner_util.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/local_planner_util.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/local_planner_util.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/odometry_helper_ros.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/odometry_helper_ros.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/odometry_helper_ros.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/obstacle_cost_function.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/obstacle_cost_function.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/obstacle_cost_function.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/oscillation_cost_function.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/oscillation_cost_function.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/oscillation_cost_function.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/prefer_forward_cost_function.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/prefer_forward_cost_function.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/prefer_forward_cost_function.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/point_grid.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/point_grid.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/point_grid.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/costmap_model.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/costmap_model.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/costmap_model.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/simple_scored_sampling_planner.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/simple_scored_sampling_planner.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/simple_scored_sampling_planner.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/simple_trajectory_generator.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/simple_trajectory_generator.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/simple_trajectory_generator.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/trajectory.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/trajectory.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/trajectory.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/twirling_cost_function.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/twirling_cost_function.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/twirling_cost_function.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dbase_local_planner_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/base_local_planner.dir/src/voxel_grid_model.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/voxel_grid_model.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/voxel_grid_model.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dtrajectory_planner_ros_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/trajectory_planner.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/trajectory_planner.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build",
+  "command": "/usr/bin/c++  -DHAVE_SYS_TIME_H -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\\\"base_local_planner\\\" -Dtrajectory_planner_ros_EXPORTS -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/devel/include -I/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/opt/ros/melodic/share/orocos_kdl/cmake/../../../include -I/usr/include/eigen3  -g -fPIC   -o CMakeFiles/trajectory_planner_ros.dir/src/trajectory_planner_ros.cpp.o -c /home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/trajectory_planner_ros.cpp",
+  "file": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/src/trajectory_planner_ros.cpp"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_main_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /usr/src/googletest/googlemock/src/gmock_main.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/gtest/googlemock",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgmock_EXPORTS -I/usr/src/googletest/googlemock/include -I/usr/src/googletest/googlemock -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc",
+  "file": "/usr/src/googletest/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_main_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /usr/src/googletest/googletest/src/gtest_main.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest_main.cc"
+},
+{
+  "directory": "/home/syz/move_base_qianjin/src/navigation-noetic-devel/base_local_planner/build/gtest/googlemock/gtest",
+  "command": "/usr/bin/c++  -DGTEST_CREATE_SHARED_LIBRARY=1 -Dgtest_EXPORTS -I/usr/src/googletest/googletest/include -I/usr/src/googletest/googletest  -g -fPIC    -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc",
+  "file": "/usr/src/googletest/googletest/src/gtest-all.cc"
+}
+]
