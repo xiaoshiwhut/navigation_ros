@@ -310,6 +310,4 @@ namespace dwa_local_planner {
       return isOk;
     }
   }
-
-
 };
