@@ -92,37 +92,14 @@ namespace base_local_planner {
       global_it = global_plan.erase(global_it);
     }
   }
-
-//过滤z的函数
-// std::vector<geometry_msgs::PoseStamped> filterZChanges(const std::vector<geometry_msgs::PoseStamped>& input_plan) {
-//     std::vector<geometry_msgs::PoseStamped> filtered_plan;
-//     if (input_plan.empty()) {
-//         return filtered_plan;
-//     }
-
-//     double prev_z = input_plan.front().pose.position.z;
-//     filtered_plan.push_back(input_plan.front());
-
-//     for (size_t i = 1; i < input_plan.size(); ++i) {
-//         double current_z = input_plan[i].pose.position.z;
-//         if ((prev_z == 1 && current_z == -1) || (prev_z == -1 && current_z == 1)) {
-//             // Skip this point
-//             continue;
-//         }
-//         filtered_plan.push_back(input_plan[i]);
-//         prev_z = current_z;
-//     }
-
-//     return filtered_plan;
-// }
   bool transformGlobalPlan(
       const tf2_ros::Buffer& tf,
-      std::vector<geometry_msgs::PoseStamped>& global_plan,
+      const std::vector<geometry_msgs::PoseStamped>& global_plan,
       const geometry_msgs::PoseStamped& global_pose,
       const costmap_2d::Costmap2D& costmap,
       const std::string& global_frame,
       std::vector<geometry_msgs::PoseStamped>& transformed_plan){
-    transformed_plan.clear();
+      transformed_plan.clear();
 
     if (global_plan.empty()) {
       ROS_ERROR("Received plan with zero length");
@@ -157,7 +134,7 @@ namespace base_local_planner {
         }
         ++i;
       }
-
+    geometry_msgs::PoseStamped prev_pose;
     geometry_msgs::PoseStamped newer_pose;
     bool is_first_point = true; // 用于标记是否是第一个点
     double prev_z = 0.0; // 用于存储前一个点的z值
@@ -165,61 +142,122 @@ namespace base_local_planner {
     double current_yaw;// 储存角度
     bool sharp_turn_detected = false;
     unsigned int sharp_turn_index = 0; //记录尖点的第几个
+    unsigned int j; 
     std::vector<unsigned int> sharp_turn_indices;
+    std::vector<unsigned int> skipped_indices;
+    bool exit_outer_loop = false;
      //std::vector<geometry_msgs::PoseStamped> filtered_plan;
       //now we'll transform until points are outside of our distance threshold
-      while(i < (unsigned int)global_plan.size() && sq_dist <= sq_dist_threshold) {
+    while(i < (unsigned int)global_plan.size() && sq_dist <= sq_dist_threshold) {
         const geometry_msgs::PoseStamped& pose = global_plan[i];
         tf2::doTransform(pose, newer_pose, plan_to_global_transform);
-         //ROS_INFO("Processing point %u: x=%f, y=%f, z=%f", i, newer_pose.pose.position.x, newer_pose.pose.position.y, newer_pose.pose.position.z);
+        //ROS_INFO("Processing point %u: x=%f, y=%f, z=%f", i, newer_pose.pose.position.x, newer_pose.pose.position.y, newer_pose.pose.position.z);
       if (!is_first_point) {
            //ROS_INFO("Previous z: %f, Current z: %f", prev_z, newer_pose.pose.position.z);
            if ((prev_z > 0.5 && newer_pose.pose.position.z <-0.5) || (prev_z <-0.5 && newer_pose.pose.position.z > 0.5)) {     // 跳过这个点     
-     //ROS_INFO("Skipping point due to z value change from %f to %f", prev_z, newer_pose.pose.position.z);
-      ++i;
-      break;
+            ROS_INFO("Skipping point due to z value change from %f to %f",prev_z, newer_pose.pose.position.z);
+            ROS_INFO("Current index after skipping: %u", i);
+            // skipped_indices.push_back(i);
+            // ROS_INFO("skipped_indece: %lu", skipped_indices.size());
+            ROS_INFO("Current transformed_plan size: %lu", transformed_plan.size());
+            sharp_turn_detected = true;
+            ROS_INFO("JIAN CE DAO JIAN DIAN ");
+            sharp_turn_index = i ;
+      //  sharp_turn_index = i; // 这个点是尖点
+          ROS_INFO("Detected sharp turn at index %u", sharp_turn_index);
+      //  ROS_INFO("Clearing previous path points due to sharp turn:");
+      //       // 清除尖点之前的路径点
+      //  ROS_INFO("before transformed_plan size: %lu", transformed_plan.size() );
+      //     if (sharp_turn_index > 0 && i <= transformed_plan.size()) {
+      //         transformed_plan.erase(transformed_plan.begin(), transformed_plan.begin() + sharp_turn_index-1);
+      //         ROS_INFO("Cleared path points before sharp turn. Current transformed_plan size: %lu", transformed_plan.size());
+      //     }else{
+      //       ROS_INFO("chao guo index ");
+      //     }
+    ++i;
+    break;
+    } 
+       
     }
-    double current_yaw = tf2::getYaw(newer_pose.pose.orientation);
-    double yaw_diff = fabs(current_yaw - prev_yaw); 
-      if (yaw_diff > M_PI) {
-          yaw_diff = 2 * M_PI - yaw_diff;
-      }
-     // 如果航向角差异超过阈值，则标记为尖点
-      if (yaw_diff > M_PI / 2 ) {
-          sharp_turn_detected = true;
-          sharp_turn_index = i; //这个点是尖点
-           sharp_turn_indices.push_back(i); // 记录尖点索引
-          ROS_INFO("Detected sharp turn at point %u", i);
-          ROS_INFO("Clearing previous path points due to sharp turn:");   
-
-          //transformed_plan.erase(transformed_plan.begin(), transformed_plan.begin() + sharp_turn_index-1);
-          //ROS_INFO("clear finish");// 打印清除之前路径点的信息
-       }
-    }
+        // if (exit_outer_loop) {
+        // break; // 退出外层循环
+        // }
         prev_z = newer_pose.pose.position.z;
-        prev_yaw = current_yaw;
+        //prev_yaw = current_yaw;
         is_first_point = false;
+        prev_pose = newer_pose;
         transformed_plan.push_back(newer_pose);
         //ROS_INFO("Current transformed_plan size: %lu", transformed_plan.size());
+        //ROS_INFO("CHULI");
         double x_diff = robot_pose.pose.position.x - global_plan[i].pose.position.x;
         double y_diff = robot_pose.pose.position.y - global_plan[i].pose.position.y;
         sq_dist = x_diff * x_diff + y_diff * y_diff;
-        ++i;
-    } 
-      // 裁剪到尖点处的路径
-    if (sharp_turn_detected) {
-        // 裁剪掉到尖点之前的路径
-         ROS_INFO("Continuing processing after sharp turn");
-         transformed_plan.erase(transformed_plan.begin() + sharp_turn_index, transformed_plan.end());
-          ROS_INFO("Transformed plan size after erase: %lu", transformed_plan.size());
+        // if(sharp_turn_detected){
+        //   ROS_INFO("kai shi clear");
+        //   transformed_plan.erase(transformed_plan.begin(),transformed_plan.begin()+sharp_turn_index);
+        //   ROS_INFO("CHU LI HOU MIAN DE LU JING ");
+        //   ROS_INFO("SHAN CHU HOU DE SIZE: %lu" , transformed_plan.size());
+        //   break;
+        // }else{
+        //   transformed_plan.push_back(newer_pose);
+        //   ROS_INFO("ELSE LI DE : %lu" , transformed_plan.size());
+        // }
+         if (sharp_turn_detected) {
+        break; // 跳出外层循环
     }
+        ++i;  
+  }      
+        //break;
+   
+    if(sharp_turn_detected) {
+       ROS_INFO("Clearing up to index: %u", sharp_turn_index);
+       ROS_INFO("Plan size before clearing: %lu", transformed_plan.size());
+       if(sharp_turn_index < transformed_plan.size()){
+       transformed_plan.erase(transformed_plan.begin(),transformed_plan.begin()+sharp_turn_index);
+       ROS_INFO("Size after clearing: %lu", transformed_plan.size());
+        } 
+        //if(sharp_turn_detected && i > sharp_turn_index-0.5 ) {
+        // transformed_plan.erase(transformed_plan.begin(),transformed_plan.begin()+sharp_turn_index);
+        // ROS_INFO("CHU LI HOU MIAN DE LU JING ");
+        // ROS_INFO("SHAN CHU HOU DE SIZE: %lu" , transformed_plan.size());
+         j = sharp_turn_index ;
+        while( j < (unsigned int)global_plan.size()&& sq_dist <= sq_dist_threshold) {
+              const geometry_msgs::PoseStamped& pose = global_plan[j];
+              tf2::doTransform(pose, newer_pose, plan_to_global_transform);
+              ROS_INFO("jian dian hou lu jing chu li ");
+              if (!is_first_point){
+              if ((prev_z > 0.5 && newer_pose.pose.position.z <-0.5) || (prev_z <-0.5 && newer_pose.pose.position.z > 0.5)){
+                  ++j;
+                
+              }
+              }
+              prev_z = newer_pose.pose.position.z;
+              is_first_point = false;
+              transformed_plan.push_back(newer_pose);
+              ROS_INFO("after clearing sharp : %lu", transformed_plan.size());
+              double x_diff = robot_pose.pose.position.x - global_plan[j].pose.position.x;
+              double y_diff = robot_pose.pose.position.y - global_plan[j].pose.position.y;
+              sq_dist = x_diff * x_diff + y_diff * y_diff;
+              ++j;
+        }
+       }
+      //裁剪到尖点处的路径
+    // if (sharp_turn_detected) {
+    //     // 裁剪掉到尖点之前的路径
+    //      ROS_INFO("Continuing processing after sharp turn");
+    //      transformed_plan.erase(transformed_plan.begin() + sharp_turn_index, transformed_plan.end());
+    //       ROS_INFO("Transformed plan size after erase: %lu", transformed_plan.size());
+    // }
     // //继续处理尖点之后的路径
-            for (unsigned int j = sharp_turn_index; j < (unsigned int)global_plan.size(); ++j) {
-                const geometry_msgs::PoseStamped& pose = global_plan[j];
-                tf2::doTransform(pose, newer_pose, plan_to_global_transform);
-                transformed_plan.push_back(newer_pose);
-            }
-    }
+            // for (unsigned int j = sharp_turn_index; j < (unsigned int)global_plan.size(); ++j) {
+            //     const geometry_msgs::PoseStamped& pose = global_plan[j];
+            //     tf2::doTransform(pose, newer_pose, plan_to_global_transform);
+            //     transformed_plan.push_back(newer_pose);
+            // }
+
+    
+  } 
+   
     catch(tf2::LookupException& ex) {
       ROS_ERROR("No Transform available Error: %s\n", ex.what());
       return false;

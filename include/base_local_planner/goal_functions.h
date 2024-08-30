@@ -98,7 +98,7 @@ namespace base_local_planner {
    * @param transformed_plan Populated with the transformed plan
    */
   bool transformGlobalPlan(const tf2_ros::Buffer& tf,
-      std::vector<geometry_msgs::PoseStamped>& global_plan,
+      const std::vector<geometry_msgs::PoseStamped>& global_plan,
       const geometry_msgs::PoseStamped& global_robot_pose,
       const costmap_2d::Costmap2D& costmap,
       const std::string& global_frame,
